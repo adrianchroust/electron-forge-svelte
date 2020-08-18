@@ -10,7 +10,7 @@
     "package": "electron-forge package",
     "make": "electron-forge make",
     "publish": "electron-forge publish",
-    "lint": "eslint --ext .ts ."
+    "lint": "eslint --ext .js,.ts ."
   },
   "keywords": ["electron", "svelte"],
   "license": "MIT",
