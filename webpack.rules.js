@@ -2,7 +2,7 @@ module.exports = [
   // Add support for native node modules
   {
     test: /\.node$/,
-    use: 'node-loader',
+    use: 'node-loader'
   },
   {
     test: /\.(m?js|node)$/,
@@ -10,7 +10,7 @@ module.exports = [
     use: {
       loader: '@marshallofsound/webpack-asset-relocator-loader',
       options: {
-        outputAssetBase: 'native_modules',
+        outputAssetBase: 'native_modules'
       },
     },
   },
