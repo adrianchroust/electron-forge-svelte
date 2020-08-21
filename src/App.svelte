@@ -1,9 +1,10 @@
-<script>
-	let name = 'World';
+<script lang="ts">
+	let name: string = 'World';
 </script>
 
-<style>
-    h1 {color: orange;}
+<style lang="scss">
+	$h1-color: orange;
+	h1 {color: $h1-color;}
 </style>
 
 <h1>💖 Hello {name}!</h1>

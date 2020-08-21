@@ -11,7 +11,12 @@ rules.push(
   {
     test: /\.(svelte)$/,
     exclude: /node_modules/,
-    use: 'svelte-loader'
+    use: {
+			loader: 'svelte-loader',
+			options: {
+				preprocess: require('svelte-preprocess')()
+			}
+		}
   }
 );
 
