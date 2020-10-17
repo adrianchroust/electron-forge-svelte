@@ -33,9 +33,12 @@ const app = new App({
 	target: document.body
 });
 
-(window as any).app = app;
+declare const window: Window & {
+	app: App;
+};
+
+window.app = app;
 
 export default app;
 
 console.log('👋 This message is being logged by "renderer.ts", included via webpack');
-

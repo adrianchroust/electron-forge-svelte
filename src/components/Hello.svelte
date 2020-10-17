@@ -4,7 +4,9 @@
 
 <style lang="scss">
 	$h1-color: orange;
-	h1 {color: $h1-color;}
+	h1 {
+		color: $h1-color;
+	}
 </style>
 
 <svelte:head>
