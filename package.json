@@ -1,6 +1,6 @@
 {
   "name": "electron-svelte",
-  "productName": "electron-svelte",
+  "productName": "Electron-Svelte",
   "version": "1.0.0",
   "description": "My Electron-Svelte Application",
   "author": "Adrian Chroust",
@@ -10,8 +10,7 @@
     "package": "electron-forge package",
     "make": "electron-forge make",
     "publish": "electron-forge publish",
-    "lint": "eslint --ext .js,.ts .",
-    "validate": "svelte-check"
+    "lint": "eslint --ext .js,.ts . && svelte-check"
   },
   "keywords": [
     "electron",
@@ -25,7 +24,7 @@
         {
           "name": "@electron-forge/maker-squirrel",
           "config": {
-            "name": "photo_vault"
+            "name": "electron-svelte"
           }
         },
         {
@@ -85,7 +84,7 @@
     "sass-loader": "^9.0.3",
     "style-loader": "^0.23.1",
     "svelte": "^3.24.1",
-    "svelte-check": "^1.0.20",
+    "svelte-check": "^1.0.22",
     "svelte-loader": "^2.13.6",
     "svelte-preprocess": "^4.1.1",
     "ts-loader": "^6.2.2",
