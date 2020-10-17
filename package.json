@@ -6,6 +6,7 @@
 	"author": "Adrian Chroust",
 	"main": ".webpack/main",
 	"scripts": {
+		"clean": "rimraf out .webpack",
 		"format": "prettier -w .",
 		"format:staged": "pretty-quick --staged",
 		"lint": "eslint --ext .js,.ts . && svelte-check",
@@ -94,6 +95,7 @@
 		"prettier": "^2.1.2",
 		"prettier-plugin-svelte": "^1.4.1",
 		"pretty-quick": "^3.1.0",
+		"rimraf": "^3.0.2",
 		"sass": "^1.26.10",
 		"sass-loader": "^9.0.3",
 		"style-loader": "^0.23.1",
