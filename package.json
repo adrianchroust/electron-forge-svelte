@@ -1,8 +1,8 @@
 {
 	"name": "electron-svelte",
-	"productName": "Electron-Svelte",
+	"productName": "Electron-Forge-Svelte",
 	"version": "1.0.0",
-	"description": "My Electron-Svelte Application",
+	"description": "My Electron-Forge-Svelte Application",
 	"author": "Adrian Chroust",
 	"main": ".webpack/main",
 	"scripts": {
