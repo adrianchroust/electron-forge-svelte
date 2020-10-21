@@ -6,7 +6,7 @@ module.exports = {
 		{
 			name: '@electron-forge/maker-squirrel',
 			config: {
-				name: 'electron-svelte'
+				name: 'electron-forge-svelte'
 			}
 		},
 		// MacOS
