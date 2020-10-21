@@ -14,4 +14,4 @@
 </svelte:head>
 
 <h1>💖 Hello {name}!</h1>
-<p>Welcome to your Electron-Svelte application.</p>
+<p>Welcome to your Electron-Forge-Svelte application.</p>
