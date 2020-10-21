@@ -1,16 +1,25 @@
 module.exports = {
 	packagerConfig: {},
 	makers: [
+		// https://www.electronforge.io/config/makers
+		// Windows
 		{
 			name: '@electron-forge/maker-squirrel',
 			config: {
 				name: 'electron-svelte'
 			}
 		},
+		// MacOS
 		{
 			name: '@electron-forge/maker-zip',
-			platforms: ['darwin']
+			platforms: ['darwin'],
+			config: {}
 		},
+		{
+			name: '@electron-forge/maker-dmg',
+			config: {}
+		},
+		// Linux
 		{
 			name: '@electron-forge/maker-deb',
 			config: {}
@@ -21,6 +30,7 @@ module.exports = {
 		}
 	],
 	plugins: [
+		// https://www.electronforge.io/config/plugins
 		[
 			'@electron-forge/plugin-webpack',
 			{
@@ -37,5 +47,8 @@ module.exports = {
 				}
 			}
 		]
+	],
+	publishers: [
+		// https://www.electronforge.io/config/publishers
 	]
 };
