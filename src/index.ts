@@ -14,8 +14,8 @@ function createWindow(): void {
 		width: 800,
 		webPreferences: {
 			worldSafeExecuteJavaScript: true,
-			contextIsolation: true,
-			nodeIntegration: true
+			nodeIntegration: true,
+			//contextIsolation: true,
 		}
 	});
 
