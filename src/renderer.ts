@@ -26,19 +26,32 @@
  * ```
  */
 
+import type { SvelteComponent } from 'svelte';
+
 import './index.scss';
 import App from './App.svelte';
 
-const app = new App({
-	target: document.body
-});
+let app: SvelteComponent;
 
-declare const window: Window & {
-	app: App;
+function createApp(): SvelteComponent {
+	if (app) app.$destroy();
+
+	app = new App({
+		target: document.body
+	});
+
+	return app;
+}
+
+declare const module: {
+	hot: {
+		accept: (dependency: string, update: () => unknown) => void;
+	};
 };
 
-window.app = app;
+if (module.hot) {
+	module.hot.accept('./App.svelte', createApp);
+}
 
-export default app;
-
+createApp();
 console.log('👋 This message is being logged by "renderer.ts", included via webpack');
