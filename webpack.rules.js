@@ -6,6 +6,7 @@ module.exports = [
 	},
 	{
 		test: /\.(m?js|node)$/,
+		type: 'javascript/auto',
 		parser: { amd: false },
 		use: [
 			{
