@@ -10,20 +10,6 @@
  * more about security risks here:
  *
  * https://electronjs.org/docs/tutorial/security
- *
- * To enable Node.js integration in this file, open up `main.js` and enable the `nodeIntegration`
- * flag:
- *
- * ```
- *  // Create the browser window.
- *  mainWindow = new BrowserWindow({
- *    width: 800,
- *    height: 600,
- *    webPreferences: {
- *      nodeIntegration: true
- *    }
- *  });
- * ```
  */
 
 import type { SvelteComponent } from 'svelte';
@@ -53,5 +39,5 @@ if (module.hot) {
 	module.hot.accept('./App.svelte', createApp);
 }
 
-createApp();
 console.log('👋 This message is being logged by "renderer.ts", included via webpack');
+createApp();
